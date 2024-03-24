@@ -1,0 +1,24 @@
+{
+  "name": "example-release-nodejs",
+  "version": "0.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-waynetsou85:WayneTsou85/example-release-nodejs.git"
+  },
+  "author": "Wayne",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "husky": "^8.0.0",
+    "semantic-release": "^23.0.5"
+  }
+}
