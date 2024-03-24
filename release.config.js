@@ -3,7 +3,14 @@ module.exports = {
     branches: ['main'],
     plugins: [
       '@semantic-release/commit-analyzer',//分析你的 commit message,有沒有 feat or fix
-      '@semantic-release/release-notes-generator',
+      [
+        '@semantic-release/release-notes-generator',
+        {
+          host: "https://github.com",
+          owner: "WayneTsou85",
+          repository: "example-release-nodejs"
+        }
+      ],
       ['@semantic-release/npm',{npmPublish: false}],
       [
         '@semantic-release/changelog', //產生CHANGELOG
